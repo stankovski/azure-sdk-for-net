@@ -64,7 +64,7 @@
   </ItemGroup>
   <ItemGroup Condition=" '$(LibraryFxTarget)' == 'net40' ">
     <Reference Include="Hyak.Common">
-      <HintPath>$(LibraryNugetPackageFolder)\Hyak.Common.1.0.2\lib\net40\Hyak.Common.dll</HintPath>
+      <HintPath>$(LibraryNugetPackageFolder)\Hyak.Common.1.1.0\lib\net40\Hyak.Common.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Azure.Common">
       <HintPath>$(LibraryNugetPackageFolder)\Microsoft.Azure.Common.2.1.0\lib\net40\Microsoft.Azure.Common.dll</HintPath>
@@ -78,7 +78,7 @@
   </ItemGroup>
   <ItemGroup Condition=" '$(LibraryFxTarget)' == 'net45' ">
     <Reference Include="Hyak.Common">
-      <HintPath>$(LibraryNugetPackageFolder)\Hyak.Common.1.0.2\lib\net45\Hyak.Common.dll</HintPath>
+      <HintPath>$(LibraryNugetPackageFolder)\Hyak.Common.1.1.0\lib\net45\Hyak.Common.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Azure.Common">
       <HintPath>$(LibraryNugetPackageFolder)\Microsoft.Azure.Common.2.1.0\lib\net45\Microsoft.Azure.Common.dll</HintPath>

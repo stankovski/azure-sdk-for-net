@@ -23,7 +23,7 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Hyak.Common">
-      <HintPath>$(LibraryNugetPackageFolder)\Hyak.Common.1.0.2\lib\portable-net403+win+wpa81\Hyak.Common.dll</HintPath>
+      <HintPath>$(LibraryNugetPackageFolder)\Hyak.Common.1.1.0\lib\portable-net403+win+wpa81\Hyak.Common.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Azure.Common">

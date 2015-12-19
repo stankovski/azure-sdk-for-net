@@ -25,7 +25,7 @@
     </references>
     <dependencies>
       <dependency id="WindowsAzure.Storage" version="3.0.3.0" />
-      <dependency id="Newtonsoft.Json" version="6.0.4" />
+      <dependency id="Newtonsoft.Json" version="7.0.1" />
     </dependencies>
   </metadata>
   <files>
