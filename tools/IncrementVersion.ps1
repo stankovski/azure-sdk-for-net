@@ -15,6 +15,7 @@ $exclusions = @("src", "Common", "Common.Authorization", "Common.NetFramework", 
 # Function to update nuspec file
 function IncrementVersion([string]$FolderPath)
 {
+    Write-Output "Updating $FolderPath"
     foreach ($exclusion in $exclusions)
     {
         if ($FolderPath.EndsWith("\" + $exclusion))
@@ -86,21 +87,8 @@ function IncrementVersion([string]$FolderPath)
     }
 }
 
-if ($Folder -eq '' -or $Folder -eq $null)
+$nuspecFiles = Get-ChildItem -Path "src" -Filter *.nuspec -Recurse
+ForEach ($file in $nuspecFiles)
 {
-    $Folder = Resolve-Path "$(Split-Path -parent $MyInvocation.MyCommand.Definition)\..\src"
-    Write-Output "Setting the folder path to $Folder"
-}
-
-if ($Folder.EndsWith( "src"))
-{
-    $subFolders = Get-ChildItem -Directory -Path $Folder
-    ForEach ($subFolder in $subFolders)
-    {
-        IncrementVersion($subFolder.FullName)
-    }
-}
-else
-{
-    IncrementVersion($Folder)
+    IncrementVersion($file.Directory.FullName)
 }
